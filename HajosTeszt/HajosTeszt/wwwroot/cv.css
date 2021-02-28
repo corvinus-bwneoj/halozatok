@@ -1,0 +1,25 @@
+﻿body{text-align:center;
+     font-size:10px;
+     font-family:Arial;
+}
+p{color:cadetblue;
+  font-size:large;
+}
+div{
+    background-color:lightcoral;
+    text-align:left;
+    border:solid 5px black;
+}
+
+img{
+    display:block;
+    margin:auto;
+
+}
+#nev{
+    font-family:'Times New Roman', Times, serif;
+    font-size:x-large;
+    color:fuchsia;
+    font-weight:bold;
+
+}
