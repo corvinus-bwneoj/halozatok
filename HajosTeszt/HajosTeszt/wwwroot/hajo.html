@@ -5,26 +5,26 @@
     <title></title>
 
     <link href="hajo.css" rel="stylesheet" />
-
+    <script src="hetedik.js"></script>
 </head>
-<body>
+<body onload="letöltés()">
     <div id="külső">
         <div id="kérdés_szöveg">
             <p>Kérdés szövege</p>
         </div>
         <div id="középső">
             <div id="válaszok">
-                <div id="válasz1" class="kerdes kattintható">Válasz 1</div>
-                <div id="válasz2" class="kerdes kattintható jó">Válasz 2</div>
-                <div id="válasz3" class="kerdes kattintható rossz">Válasz 3</div>
+                <div id="válasz1" class="kerdes kattintható" onclick="jovalasz1()">Válasz 1</div>
+                <div id="válasz2" class="kerdes kattintható jó" onclick="jovalasz2()">Válasz 2</div>
+                <div id="válasz3" class="kerdes kattintható rossz" onclick="jovalasz3()">Válasz 3</div>
             </div>
             <div id="kép">
                 <img id="kép1" src="https://szoft1.comeback.hu/hajo/teszt-0050.jpg" />
             </div>
         </div>
         <div id="vezérlő">
-            <div class="gomb kattintható">Vissza</div>
-            <div class="gomb kattintható">Előre</div>
+            <div class="gomb kattintható" onclick="minusz()">Vissza</div>
+            <div class="gomb kattintható" onclick="plusz()">Előre</div>
         </div>
     </div>
 </body>
