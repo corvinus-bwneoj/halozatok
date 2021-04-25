@@ -4,6 +4,19 @@ function letöltés() {
     fetch('/questions.json').then(r => r.json()).then(data => letöltésBefejeződött(data));
 
 }
+
+function kérdésBetöltés(id) {
+    fetch(`/questions/${id}`)
+        .then(response => {
+            if (!response.ok) {
+                console.error(`Hibás válasz: ${response.status}`)
+            }
+            else {
+                return response.json()
+            }
+        })
+        .then(data => letöltésBefejeződött(data));
+}    
 function letöltésBefejeződött(d) {
     console.log("Sikeres letöltés")
     console.log(d)
@@ -31,21 +44,17 @@ function kérdésMegjelenítés(k) {
 }
 
 function plusz() {
-    if (sz<2) {
+    
         sz++;
-    }
-    else {
-        sz = 0;
-    }
+    
+  
     kérdésMegjelenítés(sz);
 }
 function minusz() {
-    if (sz>0) {
+    
         sz--;
-    }
-    else {
-        sz = 2;
-    }
+    
+   
     kérdésMegjelenítés(sz);
 }
 function jovalasz1() {
