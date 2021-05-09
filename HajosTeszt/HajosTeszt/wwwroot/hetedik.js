@@ -12,7 +12,7 @@ function kérdésBetöltés(id) {
                 console.error(`Hibás válasz: ${response.status}`)
             }
             else {
-                return response.json()
+                kérdésMegjelenítés( response.json())
             }
         })
         .then(data => letöltésBefejeződött(data));

@@ -2,6 +2,7 @@
     height:100%;
     font-family:Georgia;
     color:floralwhite;
+    margin:0px;
 }
 div {
     margin: 10px;
@@ -12,6 +13,7 @@ div {
     height:100%;
     display:flex;
     flex-direction:column;
+    margin:0px;
 }
 
 #kérdés_szöveg {
@@ -47,13 +49,22 @@ div {
 }
 
 .kerdes {
+    padding:10px;
+    
 }
 .kattintható{cursor:pointer;
-             background-color:darkolivegreen;
+             background-color:grey;
 }
 .kattintható:hover{
-    background-color:indianred;
+    background-color:darkkhaki;
     color:black;
 }
-
+.jó{
+    background-color:darkolivegreen;
+    color:white;
+}
+.rossz {
+    background-color:darkred;
+    color: white;
+}
 
